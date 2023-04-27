@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(MoveComponent))]
 
+/// TESTT TETSTETSETSTE TSETTES
 public class PlayerMoveComponent : MonoBehaviour
 {
     [SerializeField] InputAction moveAction;
