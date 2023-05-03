@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\PlayerMoveComponent.cs" />
     <Compile Include="Assets\Scripts\MoveComponent.cs" />
     <Compile Include="Assets\Scripts\ShootComponent.cs" />
+    <Compile Include="Assets\Scripts\FlyComponent.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
