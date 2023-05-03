@@ -8,9 +8,10 @@ public class ObjectPoolComponent : MonoBehaviour
     [SerializeField] GameObject[] ObjectsToPool;
     [SerializeField] float[] quatityByObjects;
 
+    GameObject poolObject;
+
     public static ObjectPoolComponent ObjectPoolInstance;
     private List<GameObject> pool = new List<GameObject>();
-    GameObject poolObject;
 
     void Awake()
     {
