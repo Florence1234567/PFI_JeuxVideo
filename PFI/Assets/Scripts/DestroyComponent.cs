@@ -15,4 +15,9 @@ public class DestroyComponent : MonoBehaviour
     {
         
     }
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        Destroy(gameObject);
+    }
 }
