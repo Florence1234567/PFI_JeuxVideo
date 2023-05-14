@@ -5,12 +5,15 @@ using UnityEngine;
 
 public class ExplodeComponent : MonoBehaviour
 {
-    [SerializeField] GameObject ExplosionEffect;
+    [SerializeField] GameObject ExplosionInPool;
+
+    GameObject ExplosionEffect;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        ExplosionEffect = ExplosionInPool;
+        //ExplosionEffect = ObjectPoolComponent.ObjectPoolInstance.GetPooledObject(ExplosionInPool);
     }
 
     // Update is called once per frame
@@ -21,15 +24,8 @@ public class ExplodeComponent : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        Explode();
-    }
-
-    public void Explode()
-    {
-        GameObject Explosion = ObjectPoolComponent.ObjectPoolInstance.GetPooledObject(ExplosionEffect);
-        Explosion.transform.position = transform.position;
-        Explosion.transform.rotation = transform.rotation;
-
-        ExplosionEffect.SetActive(true);
+        transform.gameObject.SetActive(false);
+        //ExplosionEffect.transform.position = collision.transform.position;
+        ExplosionEffect.gameObject.SetActive(true);
     }
 }
