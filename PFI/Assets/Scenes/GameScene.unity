@@ -383,7 +383,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectsToPool:
   - {fileID: 6338578928366876998, guid: 1cadce87a0e8ce44b855449aa1db40c7, type: 3}
-  - {fileID: 7206786007024751200, guid: 18ccc2f3f63a65e4296525fb4e9076f0, type: 3}
   poolCount: 10
 --- !u!4 &801616635
 Transform:
@@ -894,6 +893,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5884237341866438061, guid: 1cadce87a0e8ce44b855449aa1db40c7, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5884237341866438061, guid: 1cadce87a0e8ce44b855449aa1db40c7, type: 3}
+      propertyPath: prewarm
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5884237341866438061, guid: 1cadce87a0e8ce44b855449aa1db40c7, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5884237341866438061, guid: 1cadce87a0e8ce44b855449aa1db40c7, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6338578928366876992, guid: 1cadce87a0e8ce44b855449aa1db40c7, type: 3}
+      propertyPath: transparent
+      value: 
+      objectReference: {fileID: 10651, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6338578928366876993, guid: 1cadce87a0e8ce44b855449aa1db40c7, type: 3}
       propertyPath: m_RootOrder
       value: 1
