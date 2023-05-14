@@ -947,6 +947,14 @@ PrefabInstance:
       propertyPath: ShapeModule.radius.value
       value: 0.7
       objectReference: {fileID: 0}
+    - target: {fileID: 5884237341866438061, guid: 1cadce87a0e8ce44b855449aa1db40c7, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5884237341866438061, guid: 1cadce87a0e8ce44b855449aa1db40c7, type: 3}
+      propertyPath: InitialModule.startLifetime.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6338578928366876992, guid: 1cadce87a0e8ce44b855449aa1db40c7, type: 3}
       propertyPath: transparent
       value: 
