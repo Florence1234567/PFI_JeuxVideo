@@ -10,9 +10,9 @@ public class BreakObjectComponent : MonoBehaviour
     [SerializeField] private bool IsDamagingObject = false; // Object also breaks other objects it touches after its broken :) 
 
     [SerializeField] private float spinForce = 10f; // The force applied to spin the object
-    [SerializeField] private float flingForce = 100f; // The force applied to fling the object
+    [SerializeField] private float flingForce = 50f; // The force applied to fling the object
     [SerializeField] private Transform flingDirection;
-    [SerializeField] private float flingTimer = 1f; //How long do we fling this object?
+    [SerializeField] private float flingTimer = .5f; //How long do we fling this object?
 
     [SerializeField] private float StructureDamage = 15; // Damage dealt when object is broken
     [SerializeField] private float DestroyTime = 10f; // Time before object vanishes after being broken
