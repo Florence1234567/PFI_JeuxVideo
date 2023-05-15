@@ -6,6 +6,8 @@ public class HealthComponent : MonoBehaviour
 {
     [SerializeField] private float Health = 100;
 
+    bool isDestroyed = false;
+
     private float MaxHealth;
 
     private void Start()
@@ -37,9 +39,18 @@ public class HealthComponent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if (Health <= 0)
+       if (Health <= 0 && !isDestroyed)
         {
+            isDestroyed = true;
 
+            // turn structure children into non kinematic rigidbodies
+            Rigidbody[] rigidBodies = GetComponentsInChildren<Rigidbody>();
+
+            foreach (Rigidbody rb in rigidBodies)
+            {
+                rb.isKinematic = false;
+                rb.useGravity = true;
+            }
         }
     }
 }

@@ -7,6 +7,8 @@ public class ExplodeComponent : MonoBehaviour
 {
     [SerializeField] Material transparent;
 
+    public bool exploded = false;
+
     MeshRenderer GrenadeRenderer;
     ParticleSystem Explosion;
 
