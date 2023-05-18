@@ -61,7 +61,6 @@ public class BreakObjectComponent : MonoBehaviour
     {
         ExplodeComponent explodeComponent = collision.transform.GetComponent<ExplodeComponent>();
 
-
         if (collision.gameObject.GetComponent<ExplodeComponent>() != null && hpComponent != null && explodeComponent != null && explodeComponent.exploded == false)
         {
             explodeComponent.exploded = true;
