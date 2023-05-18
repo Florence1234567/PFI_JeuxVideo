@@ -103,6 +103,8 @@
     <Compile Include="Assets\Scripts\MoveComponent.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\Scripts\HealthBarComponent.cs" />
+    <Compile Include="Assets\Scripts\LevelLoadComponent.cs" />
+    <Compile Include="Assets\Scripts\GrenadeComponent.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -17,6 +17,7 @@ public class ExplodeComponent : MonoBehaviour
     {
         GrenadeRenderer = GetComponentInChildren<MeshRenderer>();
         Explosion = GetComponentInChildren<ParticleSystem>();
+        Explosion.Pause();
     }
 
     // Update is called once per frame
@@ -28,6 +29,6 @@ public class ExplodeComponent : MonoBehaviour
     public void OnCollisionEnter(Collision collision)
     {
         Explosion.Play();
-        GrenadeRenderer.material = transparent;
+        //GrenadeRenderer.material = transparent;
     }
 }

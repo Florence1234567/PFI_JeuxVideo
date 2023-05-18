@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PoolObject
   - Grenade
+  - Gun
   layers:
   - Default
   - TransparentFX

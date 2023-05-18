@@ -5,6 +5,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerViewComponent : MonoBehaviour
 {
+    //Script pris de l'examen final pratique.
+
     [SerializeField] Transform player;
     float rotationCamera = 0;
 
