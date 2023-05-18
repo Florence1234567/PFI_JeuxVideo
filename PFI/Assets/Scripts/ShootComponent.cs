@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[RequireComponent(typeof(GunManager))]
+
 public class ShootComponent : MonoBehaviour
 {
     [SerializeField] GameObject Bullet;
@@ -11,12 +13,14 @@ public class ShootComponent : MonoBehaviour
     [SerializeField] AudioClip clip;
     [SerializeField] float cooldown = 2;
 
+    private GunManager gunManager
     float bulletCount;
     float elapsedTime = 0;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
+
         source.clip = clip;
     }
 
@@ -41,20 +45,16 @@ public class ShootComponent : MonoBehaviour
 
     public void Shoot()
     {
-        try
-        {
-            GameObject bullet = ObjectPoolComponent.ObjectPoolinstance.GetPooledObject(Bullet);
+        GameObject bullet = ObjectPoolComponent.ObjectPoolinstance.GetPooledObject(Bullet);
 
-            bullet.transform.SetPositionAndRotation(
-                new Vector3(transform.position.x, transform.position.y + 2, transform.position.z), 
-                transform.rotation);
-            bullet.SetActive(true);
+        bullet.transform.SetPositionAndRotation(
+            new Vector3(transform.position.x, transform.position.y + 2, transform.position.z),
+            transform.rotation);
+        bullet.SetActive(true);
 
-            source.Stop();
-            source.Play();
+        source.Stop();
+        source.Play();
 
-            elapsedTime = 0;
-        }
-        catch { }
+        elapsedTime = 0;
     }
 }
