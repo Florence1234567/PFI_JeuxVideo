@@ -16,7 +16,7 @@ public class MoveComponent : MonoBehaviour
         
     }
 
-    public void Move(Vector2 direction, float speed)
+    public void Move(Vector3 direction, float speed)
     {
         transform.Translate(Time.deltaTime * speed * direction);
     }

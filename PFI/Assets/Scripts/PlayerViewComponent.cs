@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerViewComponent : MonoBehaviour
 {
     [SerializeField] Transform player;
-    float cameraRotation = 0;
+    float rotationCamera = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -19,9 +19,9 @@ public class PlayerViewComponent : MonoBehaviour
     {
         Vector2 delta = Mouse.current.delta.ReadValue() * Time.deltaTime * 75;
 
-        cameraRotation -= delta.y;
-        cameraRotation = Mathf.Clamp(cameraRotation, -90, 90);
-        transform.localRotation = Quaternion.Euler(cameraRotation, 0, 0);
+        rotationCamera -= delta.y;
+        rotationCamera = Mathf.Clamp(rotationCamera, -90, 90);
+        transform.localRotation = Quaternion.Euler(rotationCamera, 0, 0);
 
         player.Rotate(Vector3.up * delta.x);
     }

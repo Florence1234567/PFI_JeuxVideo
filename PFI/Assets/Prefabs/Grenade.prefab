@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 6338578928366876992}
   m_Layer: 0
   m_Name: Grenade
-  m_TagString: Untagged
+  m_TagString: Grenade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c62e224f921c26f4891540aef6a5be27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transparent: {fileID: 0}
+  transparent: {fileID: 10652, guid: 0000000000000000f000000000000000, type: 0}
   exploded: 0
 --- !u!1001 &887053379070417926
 PrefabInstance:
