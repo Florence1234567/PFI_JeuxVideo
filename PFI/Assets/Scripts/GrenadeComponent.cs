@@ -15,12 +15,14 @@ public class GrenadeComponent : MonoBehaviour
 
     private void Start()
     {
-        
+        Vector3 flingForceVector = transform.forward * 10f;
+        rb.AddForce(flingForceVector, ForceMode.Impulse);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+    
+
     }
 }
