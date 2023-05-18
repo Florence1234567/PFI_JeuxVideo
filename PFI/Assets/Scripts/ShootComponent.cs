@@ -5,7 +5,11 @@ using UnityEngine.InputSystem;
 
 public class ShootComponent : MonoBehaviour
 {
+    //Source pour animation.
+    //https://www.youtube.com/watch?v=Sqb-Ue7wpsI
+
     [SerializeField] GameObject grenade;
+    [SerializeField] GameObject gun;
     [SerializeField] InputAction shootAction;
     //[SerializeField] AudioSource source;
     //[SerializeField] AudioClip clip;
@@ -52,9 +56,8 @@ public class ShootComponent : MonoBehaviour
             transform.rotation);
         bullet.SetActive(true);
 
-        Rigidbody rb = bullet.AddComponent<Rigidbody>();
-
-        rb.AddForce(transform.forward);
+        Debug.Log(bullet.transform.position);
+        Debug.Log(transform.position);
 
         //source.Stop();
         //source.Play();
