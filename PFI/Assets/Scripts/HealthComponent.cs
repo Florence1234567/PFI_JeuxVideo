@@ -8,7 +8,7 @@ public class HealthComponent : MonoBehaviour
 
     bool isDestroyed = false;
 
-    private float MaxHealth;
+    float MaxHealth;
 
     private void Start()
     {
