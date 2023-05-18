@@ -28,7 +28,11 @@ public class ExplodeComponent : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        Explosion.Play();
-        //GrenadeRenderer.material = transparent;
+        if(!exploded)
+        {
+            Explosion.Play();
+            GrenadeRenderer.material = transparent;
+            exploded = true;
+        }
     }
 }
