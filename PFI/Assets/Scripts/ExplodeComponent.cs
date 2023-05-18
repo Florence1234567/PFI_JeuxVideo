@@ -7,8 +7,6 @@ public class ExplodeComponent : MonoBehaviour
 {
     [SerializeField] Material transparent;
 
-    public bool exploded = false;
-
     MeshRenderer GrenadeRenderer;
     ParticleSystem Explosion;
 
@@ -17,6 +15,7 @@ public class ExplodeComponent : MonoBehaviour
     {
         GrenadeRenderer = GetComponentInChildren<MeshRenderer>();
         Explosion = GetComponentInChildren<ParticleSystem>();
+        Explosion.Pause();
     }
 
     // Update is called once per frame
