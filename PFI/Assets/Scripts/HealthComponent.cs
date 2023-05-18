@@ -48,7 +48,7 @@ public class HealthComponent : MonoBehaviour
 
             foreach (Rigidbody rb in rigidBodies)
             {
-                //rb.isKinematic = false;
+                rb.isKinematic = false;
                 rb.useGravity = true;
             }
         }

@@ -95,6 +95,7 @@ public class BreakObjectComponent : MonoBehaviour
 
     public void ObjectDestroyed(GameObject collidedObject)
     {
+        
         hpComponent.ReduceHealth(StructureDamage); //Reduce global structure health because the object is broken
         Debug.Log(hpComponent.GetHealth());
 
