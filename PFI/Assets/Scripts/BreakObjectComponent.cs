@@ -11,7 +11,6 @@ public class BreakObjectComponent : MonoBehaviour
 
     [SerializeField] private float spinForce = 10f; // The force applied to spin the object
     [SerializeField] private float flingForce = 100f; // The force applied to fling the object
-    [SerializeField] private Transform flingDirection;
     [SerializeField] private float flingTimer = 1f; //How long do we fling this object?
 
     [SerializeField] private float StructureDamage = 15; // Damage dealt when object is broken
@@ -48,6 +47,19 @@ public class BreakObjectComponent : MonoBehaviour
                 rb.velocity -= rb.velocity;
                 rb.angularVelocity -= rb.angularVelocity;
                 rb.velocity = new Vector3(0,-10,0);
+            } 
+            else 
+            {
+                // FLING TIME YAY  :)))))
+
+                // Spin
+                Vector3 spinTorque = new Vector3(0f, spinForce, 0f);
+                rb.AddTorque(spinTorque, ForceMode.Impulse);
+
+                // Fling 
+                Vector3 randomDirection = Random.insideUnitSphere.normalized;
+                Vector3 flingForceVector = randomDirection * flingForce;
+                rb.AddForce(flingForceVector, ForceMode.Impulse);
 
             }
         }
@@ -61,14 +73,12 @@ public class BreakObjectComponent : MonoBehaviour
     {
         ExplodeComponent explodeComponent = collision.transform.GetComponent<ExplodeComponent>();
 
-        Debug.Log(explodeComponent.exploded);
 
         if (collision.gameObject.GetComponent<ExplodeComponent>() != null && hpComponent != null && explodeComponent != null && explodeComponent.exploded == false)
         {
 
             explodeComponent.exploded = true;
 
-            Debug.Log("AAUSDSAUDSUAD");
             ObjectDestroyed(collision.gameObject);
         }
 
@@ -98,28 +108,17 @@ public class BreakObjectComponent : MonoBehaviour
 
             if (rb != null)
             {
-                //rb.isKinematic = false;
+                rb.isKinematic = false;
                 rb.useGravity = true;
 
-                // FLING TIME YAY  :)))))
+                
+                // turn object children into non kinematic rigidbodies
+                BreakObjectComponent[] BreakObjectComponents = GetComponentsInChildren<BreakObjectComponent>();
 
-                // Spin
-                Vector3 spinTorque = new Vector3(0f, spinForce, 0f);
-                rb.AddTorque(spinTorque, ForceMode.Impulse);
-
-                // Fling 
-                Vector3 randomDirection = Random.insideUnitSphere.normalized;
-                Vector3 flingForceVector = randomDirection * flingForce;
-                rb.AddForce(flingForceVector, ForceMode.Impulse);
-
-                /* turn object children into non kinematic rigidbodies
-                Rigidbody[] rigidBodies = GetComponentsInChildren<Rigidbody>();
-
-                foreach (Rigidbody rb in rigidBodies)
+                foreach (BreakObjectComponent breakObjectComponent in BreakObjectComponents)
                 {
-                    rb.isKinematic = false;
-                    rb.useGravity = true;
-                }*/
+                    breakObjectComponent.ObjectDestroyed(gameObject);
+                }
             }
         }
     }
