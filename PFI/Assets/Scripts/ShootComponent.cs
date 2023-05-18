@@ -9,7 +9,6 @@ public class ShootComponent : MonoBehaviour
     //https://www.youtube.com/watch?v=Sqb-Ue7wpsI
 
     [SerializeField] GameObject grenade;
-    [SerializeField] GameObject gun;
     [SerializeField] InputAction shootAction;
     //[SerializeField] AudioSource source;
     //[SerializeField] AudioClip clip;
