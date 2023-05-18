@@ -123,7 +123,7 @@ Transform:
   m_GameObject: {fileID: 6338578928366876998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6338578928036774068}
@@ -144,6 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transparent: {fileID: 0}
+  exploded: 0
 --- !u!1001 &887053379070417926
 PrefabInstance:
   m_ObjectHideFlags: 0

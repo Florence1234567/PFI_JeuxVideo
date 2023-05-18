@@ -102,7 +102,6 @@
     <Compile Include="Assets\Scripts\MoveComponent.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\Scripts\PlayerViewComponent.cs" />
-    <Compile Include="Assets\Scripts\GunManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
