@@ -28,5 +28,15 @@ public class LevelLoadComponent : MonoBehaviour
         }
 
         currentLevel = Instantiate(LevelsList[levelCounter]);
+
+        GameObject player = GameObject.FindWithTag("Player");
+        GameObject spawnPoint = GameObject.FindWithTag("Respawn");
+
+        if (player != null && spawnPoint != null)
+        {
+            player.transform.position = spawnPoint.transform.position;
+            player.transform.rotation = spawnPoint.transform.rotation;
+        }
+
     }
 }
