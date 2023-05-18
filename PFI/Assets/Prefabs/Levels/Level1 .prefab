@@ -1327,7 +1327,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 2
+  StructureDamage: 30
   DestroyTime: 15
 --- !u!64 &7275292465467985906
 MeshCollider:
@@ -1777,7 +1777,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 15
+  StructureDamage: 20
   DestroyTime: 15
 --- !u!64 &3380812639461400902
 MeshCollider:
@@ -2420,7 +2420,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3571627648522888645}
-  - component: {fileID: 325984182718137337}
   m_Layer: 0
   m_Name: PlaygroundCoated
   m_TagString: Untagged
@@ -2467,19 +2466,6 @@ Transform:
   m_Father: {fileID: 7909581267008190924}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &325984182718137337
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4241028282798833535}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4e7183768871ba4584a0da2ef418cfe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Health: 500
 --- !u!1 &5065515903388573752
 GameObject:
   m_ObjectHideFlags: 0
@@ -2751,7 +2737,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 15
+  StructureDamage: 20
   DestroyTime: 15
 --- !u!64 &65910977706791519
 MeshCollider:
@@ -3729,7 +3715,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 15
+  StructureDamage: 20
   DestroyTime: 15
 --- !u!64 &5793368438665508387
 MeshCollider:
@@ -4557,7 +4543,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 15
+  StructureDamage: 1
   DestroyTime: 15
 --- !u!64 &1873247510021461110
 MeshCollider:
@@ -5157,7 +5143,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 2
+  StructureDamage: 30
   DestroyTime: 15
 --- !u!64 &7786536089210731719
 MeshCollider:
@@ -5877,8 +5863,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7909581267008190924}
+  - component: {fileID: 6834602306714680919}
   m_Layer: 0
-  m_Name: Level1 1
+  m_Name: 'Level1 '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5914,6 +5901,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6834602306714680919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7909581267008190927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4e7183768871ba4584a0da2ef418cfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 100
 --- !u!1 &7909581267110568783
 GameObject:
   m_ObjectHideFlags: 0
@@ -6464,7 +6464,7 @@ MonoBehaviour:
   flingForce: 1000
   flingTimer: 1
   StructureDamage: 15
-  DestroyTime: 15
+  DestroyTime: 5
 --- !u!64 &8813250649316554076
 MeshCollider:
   m_ObjectHideFlags: 0
