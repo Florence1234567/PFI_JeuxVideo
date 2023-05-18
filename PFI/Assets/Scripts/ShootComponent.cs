@@ -50,15 +50,15 @@ public class ShootComponent : MonoBehaviour
 
         GameObject bullet = ObjectPoolComponent.ObjectPoolinstance.GetPooledObject(grenade);
 
-        bullet.transform.position = new Vector3(transform.position.x - 2, 2, transform.position.z - 0.5f);
+        bullet.transform.position = new Vector3(transform.position.x, 2, transform.position.z);
         bullet.transform.rotation = transform.rotation;
         bullet.SetActive(true);
-
-        Debug.Log(transform.position);
 
         //source.Stop();
         //source.Play();
 
         elapsedTime = 0;
     }
+
+   
 }
