@@ -119,4 +119,6 @@ public class BreakObjectComponent : MonoBehaviour
             }
         }
     }
+
+    public bool CheckIsDestroyed() => isDestroyed;
 }
