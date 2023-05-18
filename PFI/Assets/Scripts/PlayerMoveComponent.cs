@@ -5,7 +5,6 @@ using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(MoveComponent))]
 
-/// TESTT TETSTETSETSTE TSETTES
 public class PlayerMoveComponent : MonoBehaviour
 {
     [SerializeField] InputAction moveAction;
@@ -23,15 +22,15 @@ public class PlayerMoveComponent : MonoBehaviour
     private void OnEnable()
     {
         moveAction.Enable();
-        moveAction.performed += (InputAction.CallbackContext context) => direction = context.ReadValue<Vector2>();
-        moveAction.canceled += _ => direction = Vector2.zero;
+        moveAction.performed += (InputAction.CallbackContext context) => direction = context.ReadValue<Vector3>();
+        moveAction.canceled += _ => direction = Vector3.zero;
     }
 
     private void OnDisable()
     {
         moveAction.Disable();
-        moveAction.performed -= (InputAction.CallbackContext context) => direction = context.ReadValue<Vector2>();
-        moveAction.canceled -= _ => direction = Vector2.zero;
+        moveAction.performed -= (InputAction.CallbackContext context) => direction = context.ReadValue<Vector3>();
+        moveAction.canceled -= _ => direction = Vector3.zero;
     }
 
     // Update is called once per frame
