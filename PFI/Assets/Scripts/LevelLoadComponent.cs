@@ -18,7 +18,16 @@ public class LevelLoadComponent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (currentLevel) 
+        {
+            HealthComponent HealthComponent = currentLevel.GetComponent<HealthComponent>();
+
+            if (HealthComponent.GetHealth() <= 0) 
+            {
+                levelCounter += 1;
+                LoadLevel();
+            }
+        }
     }
 
     private void LoadLevel() 
