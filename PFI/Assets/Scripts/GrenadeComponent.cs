@@ -10,18 +10,17 @@ public class GrenadeComponent : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
-        rb.AddForce(Vector3.forward, ForceMode.Impulse);
     }
 
     private void Start()
     {
-        Vector3 flingForceVector = transform.forward * 35f;
-        rb.AddForce(flingForceVector, ForceMode.Impulse);
+        
     }
 
     void Update()
     {
-
+        Vector3 flingForceVector = transform.forward * 5f;
+        rb.AddForce(flingForceVector, ForceMode.Impulse);
     }
 
 }

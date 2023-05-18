@@ -50,7 +50,7 @@ public class ShootComponent : MonoBehaviour
 
         GameObject bullet = ObjectPoolComponent.ObjectPoolinstance.GetPooledObject(grenade);
 
-        bullet.transform.position = new Vector3(transform.position.x, 2, transform.position.z);
+        bullet.transform.position = new Vector3(transform.position.x - 0.7f, 2, transform.position.z);
         bullet.transform.rotation = transform.rotation;
         bullet.SetActive(true);
 

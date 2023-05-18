@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class DestroyComponent : MonoBehaviour
 {
+    [SerializeField] Material material;
     [SerializeField] float lifeSpan = 5;
+
+    MeshRenderer GrenadeRenderer;
 
     float initialTime;
 
@@ -13,11 +16,17 @@ public class DestroyComponent : MonoBehaviour
         initialTime = Time.time;
     }
 
+    void Awake()
+    {
+        GrenadeRenderer = GetComponentInChildren<MeshRenderer>();
+    }
+
     void Update()
     {
         if (Time.time > initialTime + lifeSpan)
         {
             gameObject.SetActive(false);
+            GrenadeRenderer.material = material;
         }
     }
 
