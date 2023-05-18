@@ -20,8 +20,8 @@ public class PlayerViewComponent : MonoBehaviour
         Vector2 delta = Mouse.current.delta.ReadValue() * Time.deltaTime * 75;
 
         rotationCamera -= delta.y;
-        rotationCamera = Mathf.Clamp(0, -90, 90);
-        transform.localRotation = Quaternion.Euler(0, 0, 0);
+        rotationCamera = Mathf.Clamp(rotationCamera, -90, 90);
+        transform.localRotation = Quaternion.Euler(rotationCamera, 0, 0);
 
         player.Rotate(Vector3.up * delta.x);
     }

@@ -341,9 +341,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 1.04, z: 0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 653738918}
   m_Father: {fileID: 1221934866}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &113330179
 MonoBehaviour:
@@ -658,7 +659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aca0cb9c902ce74a9101e72d593552c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bullet: {fileID: 6338578928366876998, guid: 1cadce87a0e8ce44b855449aa1db40c7, type: 3}
+  grenade: {fileID: 6338578928366876998, guid: 1cadce87a0e8ce44b855449aa1db40c7, type: 3}
   shootAction:
     m_Name: Shoot
     m_Type: 0
@@ -786,7 +787,7 @@ Transform:
   m_GameObject: {fileID: 798486691}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -953,7 +954,7 @@ GameObject:
   - component: {fileID: 1221934860}
   m_Layer: 0
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -979,7 +980,7 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 3D Vector
-      m_Id: e0afae71-4b8b-4d13-b39a-961f3ab4dced
+      m_Id: b3d4ad33-dffe-48a0-91c0-8ea87034fc47
       m_Path: 3DVector
       m_Interactions: 
       m_Processors: 
@@ -987,7 +988,7 @@ MonoBehaviour:
       m_Action: Move
       m_Flags: 4
     - m_Name: up
-      m_Id: 624518fc-e0b9-4bdd-afcd-e4d036a2cbfd
+      m_Id: 223dc782-eaf2-4081-a081-67a6ee98eb84
       m_Path: 
       m_Interactions: 
       m_Processors: 
@@ -995,7 +996,7 @@ MonoBehaviour:
       m_Action: Move
       m_Flags: 8
     - m_Name: down
-      m_Id: b2de6811-c793-4c13-bf61-ef531b7f51fe
+      m_Id: 9ab130c6-4bf7-419d-8028-5d99989e4714
       m_Path: 
       m_Interactions: 
       m_Processors: 
@@ -1003,7 +1004,7 @@ MonoBehaviour:
       m_Action: Move
       m_Flags: 8
     - m_Name: left
-      m_Id: 64cca7d3-5767-4780-85d7-bc7014267893
+      m_Id: c192c31b-99a3-4c0d-913d-af1e5b862880
       m_Path: <Keyboard>/a
       m_Interactions: 
       m_Processors: 
@@ -1011,7 +1012,7 @@ MonoBehaviour:
       m_Action: Move
       m_Flags: 8
     - m_Name: right
-      m_Id: 9b8a5a00-d43b-4047-a99e-fce17a623c68
+      m_Id: f036a10e-3c8b-4f59-9497-a09616ac1b76
       m_Path: <Keyboard>/d
       m_Interactions: 
       m_Processors: 
@@ -1019,7 +1020,7 @@ MonoBehaviour:
       m_Action: Move
       m_Flags: 8
     - m_Name: forward
-      m_Id: f691ed3c-2015-46f6-b711-accb0d359127
+      m_Id: 342aa8b1-53ee-41ba-bcac-a5807779490e
       m_Path: <Keyboard>/w
       m_Interactions: 
       m_Processors: 
@@ -1027,7 +1028,7 @@ MonoBehaviour:
       m_Action: Move
       m_Flags: 8
     - m_Name: backward
-      m_Id: 40e97899-c226-45b1-878d-27d15bb777cf
+      m_Id: baa65de1-b7b9-4303-986d-0a819bc9270c
       m_Path: <Keyboard>/s
       m_Interactions: 
       m_Processors: 
@@ -1062,7 +1063,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!136 &1221934863
 CapsuleCollider:
@@ -1136,11 +1137,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1221934859}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.29, z: -2.530666}
+  m_LocalPosition: {x: 0, y: 1.08, z: -2.530666}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 653738918}
   - {fileID: 113330178}
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -1292,7 +1292,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1221934866}
+    m_TransformParent: {fileID: 113330178}
     m_Modifications:
     - target: {fileID: 100026, guid: 1b1e15712c094a1409abf2c70f7e2703, type: 3}
       propertyPath: m_Name
@@ -1308,11 +1308,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400026, guid: 1b1e15712c094a1409abf2c70f7e2703, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.74
+      value: -1.78
       objectReference: {fileID: 0}
     - target: {fileID: 400026, guid: 1b1e15712c094a1409abf2c70f7e2703, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.59
+      value: 0.18999991
       objectReference: {fileID: 0}
     - target: {fileID: 400026, guid: 1b1e15712c094a1409abf2c70f7e2703, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1341,6 +1341,10 @@ PrefabInstance:
     - target: {fileID: 400026, guid: 1b1e15712c094a1409abf2c70f7e2703, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400028, guid: 1b1e15712c094a1409abf2c70f7e2703, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.467
       objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: 1b1e15712c094a1409abf2c70f7e2703, type: 3}
       propertyPath: m_Controller

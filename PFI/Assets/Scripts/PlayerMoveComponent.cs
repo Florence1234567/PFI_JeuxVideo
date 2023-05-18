@@ -12,7 +12,7 @@ public class PlayerMoveComponent : MonoBehaviour
 
     MoveComponent moveComponent;
 
-    Vector2 direction = Vector2.zero;
+    Vector3 direction = Vector3.zero;
 
     void Awake()
     {

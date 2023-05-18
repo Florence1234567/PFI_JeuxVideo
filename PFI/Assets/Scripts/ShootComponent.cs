@@ -5,15 +5,14 @@ using UnityEngine.InputSystem;
 
 public class ShootComponent : MonoBehaviour
 {
-    [SerializeField] GameObject Bullet;
+    [SerializeField] GameObject grenade;
     [SerializeField] InputAction shootAction;
     //[SerializeField] AudioSource source;
     //[SerializeField] AudioClip clip;
     [SerializeField] float cooldown = 2;
+    
+    Animator animator;
 
-    private Animator animator;
-
-    float bulletCount;
     float elapsedTime = 0;
 
     // Start is called before the first frame update
@@ -29,6 +28,11 @@ public class ShootComponent : MonoBehaviour
         shootAction.Enable();
     }
 
+    private void OnDisable()
+    {
+        shootAction.Disable();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -41,12 +45,16 @@ public class ShootComponent : MonoBehaviour
     {
         animator.SetTrigger("Fire");
 
-        GameObject bullet = ObjectPoolComponent.ObjectPoolinstance.GetPooledObject(Bullet);
+        GameObject bullet = ObjectPoolComponent.ObjectPoolinstance.GetPooledObject(grenade);
 
         bullet.transform.SetPositionAndRotation(
-            new Vector3(transform.position.x, transform.position.y + 2, transform.position.z),
+            new Vector3(transform.position.x, transform.position.y, transform.position.z),
             transform.rotation);
         bullet.SetActive(true);
+
+        Rigidbody rb = bullet.AddComponent<Rigidbody>();
+
+        rb.AddForce(transform.forward);
 
         //source.Stop();
         //source.Play();
