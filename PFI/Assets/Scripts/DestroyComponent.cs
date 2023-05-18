@@ -4,20 +4,25 @@ using UnityEngine;
 
 public class DestroyComponent : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] float lifeSpan = 5;
+
+    float initialTime;
+
+    private void OnEnable()
     {
-        
+        initialTime = Time.time;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (Time.time > initialTime + lifeSpan)
+        {
+            gameObject.SetActive(false);
+        }
     }
 
-    public void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 }

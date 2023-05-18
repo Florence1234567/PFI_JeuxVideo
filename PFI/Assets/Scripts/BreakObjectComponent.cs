@@ -99,7 +99,7 @@ public class BreakObjectComponent : MonoBehaviour
             if (rb != null)
             {
                 rb.isKinematic = false;
-                rb.useGravity = true;
+                //rb.useGravity = true;
 
                 // FLING TIME YAY  :)))))
 
