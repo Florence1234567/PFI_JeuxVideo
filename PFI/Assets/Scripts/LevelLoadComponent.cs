@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelLoadComponent : MonoBehaviour
 {
@@ -37,9 +38,6 @@ public class LevelLoadComponent : MonoBehaviour
 
     public IEnumerator LoadLevel() 
     {
-        
-        
-
         // si nous ne sommes pas au dernier niveau. 
         if (LevelsList.Length > levelCounter) 
         {
@@ -47,6 +45,7 @@ public class LevelLoadComponent : MonoBehaviour
             if (currentLevel) 
             {
                 levelCounter += 1;
+                manageLevel.UpdateLevelCount(levelCounter);
                 yield return new WaitForSeconds(5f);
                 Destroy(currentLevel);
             }
@@ -63,20 +62,9 @@ public class LevelLoadComponent : MonoBehaviour
         }
         else 
         {
-            // VICTOIRE YAYAYYAY AYYAYAYYAY AYY AY YAY
+            SceneManager.LoadScene(3);
         }
 
         loading = false;
-    }
-
-    public float GetLevelCount()
-    {
-        loading = false;
-        return levelCounter;
-    }
-
-    IEnumerator WaitSeconds(int duration)
-    {
-        yield return new WaitForSeconds(duration);
     }
 }

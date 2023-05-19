@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HealthComponent : MonoBehaviour
 {
-    [SerializeField] private float Health = 100;
+    [SerializeField] private float Health = 85;
 
     bool isDestroyed = false;
 

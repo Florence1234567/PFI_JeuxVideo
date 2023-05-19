@@ -22,7 +22,7 @@ public class ManageGrenadeCount : MonoBehaviour
 
     public void UpdateGrenadeCount(float grenadeCount)
     {
-        if(grenadeCount <= 0)
+        if(grenadeCount < 0)
             SceneManager.LoadScene(0);
 
         text.text = $"{grenadeCount}";
