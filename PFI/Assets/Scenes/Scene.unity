@@ -297,7 +297,7 @@ MonoBehaviour:
   ObjectsToPool:
   - {fileID: 6338578928366876998, guid: 1cadce87a0e8ce44b855449aa1db40c7, type: 3}
   quantiteParObjet:
-  - 15
+  - 21
 --- !u!4 &181524563
 Transform:
   m_ObjectHideFlags: 0
@@ -594,7 +594,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 113330177}
-  m_PlaneDistance: 1
+  m_PlaneDistance: 2
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -1447,7 +1447,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1255834993}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 2.25, y: 8.36, z: -3.89}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
