@@ -6,6 +6,7 @@ public class LevelLoadComponent : MonoBehaviour
 {
     [SerializeField] GameObject[] LevelsList;
 
+    ManageLevel manageLevel;
     private GameObject currentLevel;
     bool loading = true; 
     private int levelCounter = 1; 
@@ -57,8 +58,8 @@ public class LevelLoadComponent : MonoBehaviour
 
     public float GetLevelCount()
     {
-        return levelCounter;
         loading = false;
+        return levelCounter;
     }
 
     IEnumerator WaitSeconds(int duration)
