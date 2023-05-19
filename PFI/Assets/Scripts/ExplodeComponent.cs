@@ -10,6 +10,7 @@ public class ExplodeComponent : MonoBehaviour
     public bool exploded = false;
 
     MeshRenderer GrenadeRenderer;
+    Rigidbody Rigidbody;
     ParticleSystem Explosion;
 
     // Start is called before the first frame update
@@ -17,6 +18,7 @@ public class ExplodeComponent : MonoBehaviour
     {
         GrenadeRenderer = GetComponentInChildren<MeshRenderer>();
         Explosion = GetComponentInChildren<ParticleSystem>();
+        Rigidbody = GetComponent<Rigidbody>();
         Explosion.Pause();
     }
 
@@ -32,6 +34,9 @@ public class ExplodeComponent : MonoBehaviour
         {
             Explosion.Play();
             GrenadeRenderer.material = transparent;
+
+            Rigidbody.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
+
             //exploded = true;
         }
     }
