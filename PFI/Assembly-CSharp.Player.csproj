@@ -108,6 +108,7 @@
     <Compile Include="Assets\Scripts\LaunchGameComponent.cs" />
     <Compile Include="Assets\Scripts\ManageLevel.cs" />
     <Compile Include="Assets\Scripts\ManageGrenadeCount.cs" />
+    <Compile Include="Assets\Scripts\WindTurbineComponent.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
