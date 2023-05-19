@@ -271,7 +271,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 4
+  StructureDamage: 5
   DestroyTime: 15
 --- !u!64 &8993908671985104550
 MeshCollider:
@@ -716,7 +716,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsFoundation: 0
-  IsResilient: 0
+  IsResilient: 1
   IsDamagingObject: 0
   spinForce: 50
   flingForce: 1000
@@ -871,7 +871,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 4
+  StructureDamage: 5
   DestroyTime: 15
 --- !u!64 &6413090002029977480
 MeshCollider:
@@ -1177,7 +1177,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 15
+  StructureDamage: 5
   DestroyTime: 15
 --- !u!64 &8368024484807372296
 MeshCollider:
@@ -1327,7 +1327,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 50
+  StructureDamage: 75
   DestroyTime: 15
 --- !u!64 &7275292465467985906
 MeshCollider:
@@ -1477,7 +1477,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 4
+  StructureDamage: 5
   DestroyTime: 15
 --- !u!64 &4899714018111769368
 MeshCollider:
@@ -1627,7 +1627,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 15
+  StructureDamage: 5
   DestroyTime: 15
 --- !u!64 &4310318260270148674
 MeshCollider:
@@ -2082,7 +2082,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 4
+  StructureDamage: 5
   DestroyTime: 15
 --- !u!64 &140476023084047276
 MeshCollider:
@@ -2881,7 +2881,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 4
+  StructureDamage: 5
   DestroyTime: 15
 --- !u!64 &3858852871491075743
 MeshCollider:
@@ -3026,7 +3026,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsFoundation: 0
-  IsResilient: 0
+  IsResilient: 1
   IsDamagingObject: 0
   spinForce: 50
   flingForce: 1000
@@ -3409,7 +3409,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 15
+  StructureDamage: 5
   DestroyTime: 15
 --- !u!64 &196707080453086757
 MeshCollider:
@@ -3559,7 +3559,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 4
+  StructureDamage: 5
   DestroyTime: 15
 --- !u!64 &6876987783096847450
 MeshCollider:
@@ -4692,7 +4692,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 15
+  StructureDamage: 5
   DestroyTime: 15
 --- !u!64 &6931081138534752329
 MeshCollider:
@@ -4842,7 +4842,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 4
+  StructureDamage: 5
   DestroyTime: 15
 --- !u!64 &8737154800275471360
 MeshCollider:
@@ -4992,7 +4992,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 4
+  StructureDamage: 5
   DestroyTime: 15
 --- !u!64 &5098675124507559019
 MeshCollider:
@@ -5142,7 +5142,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 50
+  StructureDamage: 75
   DestroyTime: 15
 --- !u!64 &7786536089210731719
 MeshCollider:
@@ -5442,7 +5442,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 4
+  StructureDamage: 5
   DestroyTime: 15
 --- !u!64 &3373865653664382956
 MeshCollider:
@@ -5592,7 +5592,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 4
+  StructureDamage: 5
   DestroyTime: 15
 --- !u!64 &8353937982674464916
 MeshCollider:
@@ -5712,7 +5712,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7909581267008190924}
-  - component: {fileID: 6834602306714680919}
   m_Layer: 0
   m_Name: 'Level1 '
   m_TagString: Untagged
@@ -5750,19 +5749,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6834602306714680919
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7909581267008190927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4e7183768871ba4584a0da2ef418cfe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Health: 400
 --- !u!1 &7909581267110568783
 GameObject:
   m_ObjectHideFlags: 0
@@ -5891,7 +5877,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4e7183768871ba4584a0da2ef418cfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 350
+  Health: 300
 --- !u!1 &8525511692245841844
 GameObject:
   m_ObjectHideFlags: 0
@@ -6013,7 +5999,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 15
+  StructureDamage: 5
   DestroyTime: 15
 --- !u!64 &5100454002237032220
 MeshCollider:
@@ -6163,7 +6149,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 15
+  StructureDamage: 5
   DestroyTime: 15
 --- !u!64 &1130801189403927793
 MeshCollider:
@@ -6308,7 +6294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsFoundation: 0
-  IsResilient: 0
+  IsResilient: 1
   IsDamagingObject: 0
   spinForce: 50
   flingForce: 1000

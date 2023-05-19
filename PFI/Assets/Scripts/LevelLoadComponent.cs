@@ -17,7 +17,6 @@ public class LevelLoadComponent : MonoBehaviour
     {
         manageLevel = GameObject.FindWithTag("ManageUI").GetComponent<ManageLevel>();
 
-        LoadLevel();
         StartCoroutine(LoadLevel());
     }
 
@@ -28,8 +27,11 @@ public class LevelLoadComponent : MonoBehaviour
         {
             HealthComponent HealthComponent = currentLevel.GetComponentInChildren<HealthComponent>();
 
+
+
             if (HealthComponent.GetHealth() <= 0 && loading == false) 
             {
+
                 loading = true;
                 StartCoroutine(LoadLevel());
             }
@@ -38,15 +40,16 @@ public class LevelLoadComponent : MonoBehaviour
 
     public IEnumerator LoadLevel() 
     {
+
         // si nous ne sommes pas au dernier niveau. 
-        if (LevelsList.Length > levelCounter) 
+        if (LevelsList.Length > levelCounter + 1) 
         {
             // si nous sommes déjà à l'intérieur d'un niveau
             if (currentLevel) 
             {
                 levelCounter += 1;
                 manageLevel.UpdateLevelCount(levelCounter);
-                yield return new WaitForSeconds(5f);
+                yield return new WaitForSeconds(5);
                 Destroy(currentLevel);
             }
 
@@ -62,9 +65,9 @@ public class LevelLoadComponent : MonoBehaviour
         }
         else 
         {
+            yield return new WaitForSeconds(5);
             SceneManager.LoadScene(3);
         }
-
         loading = false;
     }
 }

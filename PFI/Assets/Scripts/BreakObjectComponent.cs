@@ -101,7 +101,6 @@ public class BreakObjectComponent : MonoBehaviour
             hpComponent.ReduceHealth(StructureDamage); //Reduce global structure health because the object is broken
         
         healthBar.UpdateHealthBar(hpComponent.GetHealth(), hpComponent.GetMaxHealth());
-        Debug.Log(hpComponent.GetHealth());
 
         // if object is resilient, check if structure health is below half 
         bool resilienceCheck = (IsResilient && hpComponent.GetHealth() < (hpComponent.GetMaxHealth() / 2) || !IsResilient) ? true : false;
