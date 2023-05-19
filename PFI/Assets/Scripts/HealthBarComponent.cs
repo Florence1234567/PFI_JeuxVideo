@@ -22,4 +22,9 @@ public class HealthBarComponent : MonoBehaviour
     {
         healthBar.fillAmount = health / maxHealth;
     }
+
+    public void RefillHealthBar()
+    {
+        healthBar.fillAmount = 100;
+    }
 }

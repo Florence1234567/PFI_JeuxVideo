@@ -12,12 +12,14 @@ public class ShootComponent : MonoBehaviour
 
     [SerializeField] GameObject grenade;
     [SerializeField] InputAction shootAction;
-    //[SerializeField] AudioSource source;
-    //[SerializeField] AudioClip clip;
+    [SerializeField] AudioSource source;
+    [SerializeField] AudioClip clip;
     [SerializeField] float cooldown = 2;
 
     ManageGrenadeCount manageCount;
     Animator animator;
+    ManageLevel manageLevel;
+    HealthBarComponent healthBar;
 
     float grenadeCount = 15;
     float elapsedTime = 0;
@@ -26,10 +28,12 @@ public class ShootComponent : MonoBehaviour
     void Awake()
     {
         manageCount = GameObject.FindWithTag("ManageUI").GetComponent<ManageGrenadeCount>();
+        manageLevel = GameObject.FindWithTag("ManageUI").GetComponent<ManageLevel>();
+        healthBar = GameObject.FindWithTag("ManageUI").GetComponent<HealthBarComponent>();
 
         animator = GetComponent<Animator>();
 
-        //source.clip = clip;
+        source.clip = clip;
     }
 
     private void OnEnable()
@@ -45,6 +49,12 @@ public class ShootComponent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (manageLevel.GetLevelCount() == 2)
+        {
+            grenadeCount = 2;
+            healthBar.RefillHealthBar();
+        }
+
         elapsedTime += Time.deltaTime;
         if (shootAction.IsPressed() && elapsedTime >= cooldown)
             Shoot();
@@ -52,6 +62,9 @@ public class ShootComponent : MonoBehaviour
 
     public void Shoot()
     {
+        source.Stop();
+        source.Play();
+
         animator.SetTrigger("Fire");
 
         GameObject bullet = ObjectPoolComponent.ObjectPoolinstance.GetPooledObject(grenade);
@@ -59,9 +72,6 @@ public class ShootComponent : MonoBehaviour
         bullet.transform.position = new Vector3(transform.position.x - 0.7f, 2, transform.position.z);
         bullet.transform.rotation = transform.rotation;
         bullet.SetActive(true);
-
-        //source.Stop();
-        //source.Play();
 
         grenadeCount--;
         elapsedTime = 0;
