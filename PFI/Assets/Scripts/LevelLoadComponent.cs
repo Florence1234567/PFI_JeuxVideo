@@ -6,10 +6,9 @@ public class LevelLoadComponent : MonoBehaviour
 {
     [SerializeField] GameObject[] LevelsList;
 
-    ManageLevel manageLevel;
-
     private GameObject currentLevel;
-    private int levelCounter = 0;
+    bool loading = true; 
+    private int levelCounter = 0; 
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +16,7 @@ public class LevelLoadComponent : MonoBehaviour
         manageLevel = GameObject.FindWithTag("ManageUI").GetComponent<ManageLevel>();
 
         LoadLevel();
+        StartCoroutine(LoadLevel());
     }
 
     // Update is called once per frame
@@ -24,21 +24,22 @@ public class LevelLoadComponent : MonoBehaviour
     {
         if (currentLevel)
         {
-            HealthComponent HealthComponent = currentLevel.GetComponent<HealthComponent>();
+            HealthComponent HealthComponent = currentLevel.GetComponentInChildren<HealthComponent>();
 
-            if (HealthComponent.GetHealth() <= 0)
+            if (HealthComponent.GetHealth() <= 0 && loading == false) 
             {
-                levelCounter += 1;
-                manageLevel.UpdateLevelCount(levelCounter);
-                LoadLevel();
+                loading = true;
+                StartCoroutine(LoadLevel());
             }
         }
     }
 
-    private void LoadLevel()
+    public IEnumerator LoadLevel() 
     {
-        if (currentLevel)
-        {
+        
+        if (currentLevel) {
+            levelCounter += 1;
+            yield return new WaitForSeconds(5f);
             Destroy(currentLevel);
         }
 
@@ -57,5 +58,11 @@ public class LevelLoadComponent : MonoBehaviour
     public float GetLevelCount()
     {
         return levelCounter;
+        loading = false;
+    }
+
+    IEnumerator WaitSeconds(int duration)
+    {
+        yield return new WaitForSeconds(duration);
     }
 }
