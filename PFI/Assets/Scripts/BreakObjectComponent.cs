@@ -20,11 +20,14 @@ public class BreakObjectComponent : MonoBehaviour
     private float timeSinceDeath = 0f;
     Rigidbody rb;
 
+    HealthBarComponent healthBar;
     HealthComponent hpComponent;
 
 
     void Start()
     {
+        healthBar = GameObject.FindWithTag("ManageHealth").GetComponent<HealthBarComponent>();
+
         rb = GetComponent<Rigidbody>();
         hpComponent = gameObject.GetComponentInParent<HealthComponent>();
 
@@ -60,7 +63,6 @@ public class BreakObjectComponent : MonoBehaviour
                 Vector3 randomDirection = Random.insideUnitSphere.normalized;
                 Vector3 flingForceVector = randomDirection * flingForce;
                 rb.AddForce(flingForceVector, ForceMode.Impulse);
-
             }
         }
 
@@ -95,8 +97,8 @@ public class BreakObjectComponent : MonoBehaviour
 
     public void ObjectDestroyed(GameObject collidedObject)
     {
-        
         hpComponent.ReduceHealth(StructureDamage); //Reduce global structure health because the object is broken
+        healthBar.UpdateHealthBar(hpComponent.GetHealth(), hpComponent.GetMaxHealth());
         Debug.Log(hpComponent.GetHealth());
 
         // if object is resilient, check if structure health is below half 

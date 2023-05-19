@@ -6,12 +6,10 @@ public class HealthBarComponent : MonoBehaviour
 {
     [SerializeField] UnityEngine.UI.Image healthBar;
 
-    float maxHealth = 100;
-
     // Start is called before the first frame update
     void Start()
     {
-
+        healthBar.fillAmount = 100;
     }
 
     // Update is called once per frame
@@ -20,13 +18,8 @@ public class HealthBarComponent : MonoBehaviour
 
     }
 
-    public void UpdateHealthBar(float health)
+    public void UpdateHealthBar(float health, float maxHealth)
     {
         healthBar.fillAmount = health / maxHealth;
-    }
-
-    public void ActivateHealthBar()
-    {
-        healthBar.fillAmount = maxHealth;
     }
 }
