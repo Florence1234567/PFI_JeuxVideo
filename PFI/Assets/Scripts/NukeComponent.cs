@@ -6,6 +6,7 @@ public class NukeComponent : MonoBehaviour
 {
     ParticleSystem Explosion;
     BreakObjectComponent BreakObjectComponent;
+    bool explosionPlayed = false;
 
     // Start is called before the first frame update
     void Awake()
@@ -17,9 +18,10 @@ public class NukeComponent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (BreakObjectComponent.CheckIsDestroyed()) 
+        if (BreakObjectComponent.CheckIsDestroyed() && !explosionPlayed) 
         {
             Explosion.Play();
+            explosionPlayed = true;
         }
     }
 }
