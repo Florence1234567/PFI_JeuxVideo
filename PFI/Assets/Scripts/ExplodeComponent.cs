@@ -19,7 +19,6 @@ public class ExplodeComponent : MonoBehaviour
         GrenadeRenderer = GetComponentInChildren<MeshRenderer>();
         Explosion = GetComponentInChildren<ParticleSystem>();
         Rigidbody = GetComponent<Rigidbody>();
-        Explosion.Pause();
     }
 
     // Update is called once per frame
@@ -34,9 +33,6 @@ public class ExplodeComponent : MonoBehaviour
         {
             Explosion.Play();
             GrenadeRenderer.material = transparent;
-
-            Rigidbody.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
-
             //exploded = true;
         }
     }

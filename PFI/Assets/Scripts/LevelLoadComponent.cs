@@ -47,7 +47,7 @@ public class LevelLoadComponent : MonoBehaviour
             {
                 levelCounter += 1;
                 manageLevel.UpdateLevelCount(levelCounter);
-                yield return new WaitForSeconds(5f);
+                yield return new WaitForSeconds(3f);
                 Destroy(currentLevel);
             }
 
