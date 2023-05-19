@@ -8,6 +8,7 @@ public class LevelLoadComponent : MonoBehaviour
     [SerializeField] GameObject[] LevelsList;
 
     ManageLevel manageLevel;
+
     private GameObject currentLevel;
     bool loading = false; 
     private int levelCounter = 0; 
