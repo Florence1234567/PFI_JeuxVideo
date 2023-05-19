@@ -13,13 +13,16 @@ public class LevelLoadComponent : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        manageLevel = GameObject.FindWithTag("ManageUI").GetComponent<ManageLevel>();
+
+        LoadLevel();
         StartCoroutine(LoadLevel());
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (currentLevel) 
+        if (currentLevel)
         {
             HealthComponent HealthComponent = currentLevel.GetComponentInChildren<HealthComponent>();
 
@@ -63,5 +66,16 @@ public class LevelLoadComponent : MonoBehaviour
         }
 
         loading = false;
+    }
+
+    public float GetLevelCount()
+    {
+        return levelCounter;
+        loading = false;
+    }
+
+    IEnumerator WaitSeconds(int duration)
+    {
+        yield return new WaitForSeconds(duration);
     }
 }
