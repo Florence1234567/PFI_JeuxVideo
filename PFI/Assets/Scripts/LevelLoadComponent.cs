@@ -6,33 +6,39 @@ public class LevelLoadComponent : MonoBehaviour
 {
     [SerializeField] GameObject[] LevelsList;
 
-    private GameObject currentLevel; 
-    private int levelCounter = 0; 
+    ManageLevel manageLevel;
+
+    private GameObject currentLevel;
+    private int levelCounter = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-       LoadLevel();
+        manageLevel = GameObject.FindWithTag("ManageUI").GetComponent<ManageLevel>();
+
+        LoadLevel();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (currentLevel) 
+        if (currentLevel)
         {
             HealthComponent HealthComponent = currentLevel.GetComponent<HealthComponent>();
 
-            if (HealthComponent.GetHealth() <= 0) 
+            if (HealthComponent.GetHealth() <= 0)
             {
                 levelCounter += 1;
+                manageLevel.UpdateLevelCount(levelCounter);
                 LoadLevel();
             }
         }
     }
 
-    private void LoadLevel() 
+    private void LoadLevel()
     {
-        if (currentLevel) {
+        if (currentLevel)
+        {
             Destroy(currentLevel);
         }
 
@@ -46,6 +52,10 @@ public class LevelLoadComponent : MonoBehaviour
             player.transform.position = spawnPoint.transform.position;
             player.transform.rotation = spawnPoint.transform.rotation;
         }
+    }
 
+    public float GetLevelCount()
+    {
+        return levelCounter;
     }
 }

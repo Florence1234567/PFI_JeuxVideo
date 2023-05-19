@@ -26,7 +26,7 @@ public class BreakObjectComponent : MonoBehaviour
 
     void Start()
     {
-        healthBar = GameObject.FindWithTag("ManageHealth").GetComponent<HealthBarComponent>();
+        healthBar = GameObject.FindWithTag("ManageUI").GetComponent<HealthBarComponent>();
 
         rb = GetComponent<Rigidbody>();
         hpComponent = gameObject.GetComponentInParent<HealthComponent>();

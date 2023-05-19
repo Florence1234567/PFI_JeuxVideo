@@ -7,7 +7,7 @@ TagManager:
   - PoolObject
   - Grenade
   - Gun
-  - ManageHealth
+  - ManageUI
   layers:
   - Default
   - TransparentFX

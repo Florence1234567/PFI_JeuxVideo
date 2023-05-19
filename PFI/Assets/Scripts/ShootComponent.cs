@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class ShootComponent : MonoBehaviour
 {
@@ -13,14 +15,18 @@ public class ShootComponent : MonoBehaviour
     //[SerializeField] AudioSource source;
     //[SerializeField] AudioClip clip;
     [SerializeField] float cooldown = 2;
-    
+
+    ManageGrenadeCount manageCount;
     Animator animator;
 
+    float grenadeCount = 15;
     float elapsedTime = 0;
 
     // Start is called before the first frame update
     void Awake()
     {
+        manageCount = GameObject.FindWithTag("ManageUI").GetComponent<ManageGrenadeCount>();
+
         animator = GetComponent<Animator>();
 
         //source.clip = clip;
@@ -57,8 +63,9 @@ public class ShootComponent : MonoBehaviour
         //source.Stop();
         //source.Play();
 
+        grenadeCount--;
         elapsedTime = 0;
-    }
 
-   
+        manageCount.UpdateGrenadeCount(grenadeCount);
+    }
 }
