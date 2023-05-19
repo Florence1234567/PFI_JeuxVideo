@@ -5712,6 +5712,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7909581267008190924}
+  - component: {fileID: 6834602306714680919}
   m_Layer: 0
   m_Name: 'Level1 '
   m_TagString: Untagged
@@ -5760,7 +5761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4e7183768871ba4584a0da2ef418cfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 500
+  Health: 400
 --- !u!1 &7909581267110568783
 GameObject:
   m_ObjectHideFlags: 0
