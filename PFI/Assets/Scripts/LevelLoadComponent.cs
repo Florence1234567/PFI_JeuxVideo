@@ -8,7 +8,7 @@ public class LevelLoadComponent : MonoBehaviour
 
     private GameObject currentLevel;
     bool loading = true; 
-    private int levelCounter = 0; 
+    private int levelCounter = 1; 
 
     // Start is called before the first frame update
     void Start()
