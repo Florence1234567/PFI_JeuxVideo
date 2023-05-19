@@ -35,7 +35,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3571627648522888645}
-  m_RootOrder: 16
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6413137261028285577
 MeshFilter:
@@ -271,7 +271,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 3
+  StructureDamage: 4
   DestroyTime: 15
 --- !u!64 &8993908671985104550
 MeshCollider:
@@ -335,7 +335,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3571627648522888645}
-  m_RootOrder: 15
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8244936888502287665
 MeshFilter:
@@ -485,7 +485,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3571627648522888645}
-  m_RootOrder: 20
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &674261960069850882
 MeshFilter:
@@ -635,7 +635,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3571627648522888645}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4671282839531939294
 MeshFilter:
@@ -871,7 +871,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 3
+  StructureDamage: 4
   DestroyTime: 15
 --- !u!64 &6413090002029977480
 MeshCollider:
@@ -941,7 +941,7 @@ Transform:
   - {fileID: 6559674431647499513}
   - {fileID: 314282408805228573}
   m_Father: {fileID: 3571627648522888645}
-  m_RootOrder: 17
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8721523735631915400
 MeshFilter:
@@ -1235,12 +1235,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1898830421091797548}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3571627648522888645}
+  m_Father: {fileID: 4217530000415924157}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &33130093643848047
@@ -1327,7 +1327,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 30
+  StructureDamage: 50
   DestroyTime: 15
 --- !u!64 &7275292465467985906
 MeshCollider:
@@ -1477,7 +1477,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 3
+  StructureDamage: 4
   DestroyTime: 15
 --- !u!64 &4899714018111769368
 MeshCollider:
@@ -1691,7 +1691,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3571627648522888645}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8515671110802237163
 MeshFilter:
@@ -1777,7 +1777,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 20
+  StructureDamage: 30
   DestroyTime: 15
 --- !u!64 &3380812639461400902
 MeshCollider:
@@ -1846,7 +1846,7 @@ Transform:
   - {fileID: 972996932388173663}
   - {fileID: 6706289361626959657}
   m_Father: {fileID: 3571627648522888645}
-  m_RootOrder: 9
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2912851048951882967
 MeshFilter:
@@ -2082,7 +2082,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 3
+  StructureDamage: 4
   DestroyTime: 15
 --- !u!64 &140476023084047276
 MeshCollider:
@@ -2146,7 +2146,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3571627648522888645}
-  m_RootOrder: 12
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7162498372771860433
 MeshFilter:
@@ -2232,7 +2232,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 15
+  StructureDamage: 5
   DestroyTime: 15
 --- !u!64 &7876726421998747670
 MeshCollider:
@@ -2296,7 +2296,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3571627648522888645}
-  m_RootOrder: 10
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8297711912675106072
 MeshFilter:
@@ -2439,21 +2439,16 @@ Transform:
   m_LocalScale: {x: 0.00068730593, y: 10.21367, z: 0.0010715872}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1710055785247937135}
   - {fileID: 3987959748343017462}
   - {fileID: 4874959967450141279}
-  - {fileID: 7995807862680515611}
   - {fileID: 8566131849664440741}
   - {fileID: 3990595005641392811}
   - {fileID: 3125336837716901972}
-  - {fileID: 459595576307705886}
   - {fileID: 7066873468022318898}
   - {fileID: 5223544133245677877}
   - {fileID: 2179379437336573032}
-  - {fileID: 5268885847910842590}
   - {fileID: 5856535931698601256}
   - {fileID: 6927873397134938541}
-  - {fileID: 50533327568927948}
   - {fileID: 851125224445451909}
   - {fileID: 3483967630095122086}
   - {fileID: 4928264423688932012}
@@ -2500,7 +2495,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3571627648522888645}
-  m_RootOrder: 13
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &208028600808977050
 MeshFilter:
@@ -2586,7 +2581,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 15
+  StructureDamage: 5
   DestroyTime: 15
 --- !u!64 &224863891281417561
 MeshCollider:
@@ -2650,7 +2645,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3571627648522888645}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8133436188514648380
 MeshFilter:
@@ -2736,7 +2731,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 20
+  StructureDamage: 30
   DestroyTime: 15
 --- !u!64 &65910977706791519
 MeshCollider:
@@ -2886,7 +2881,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 3
+  StructureDamage: 4
   DestroyTime: 15
 --- !u!64 &3858852871491075743
 MeshCollider:
@@ -2944,13 +2939,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5399980489054630499}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3571627648522888645}
-  m_RootOrder: 7
+  m_Father: {fileID: 4217530000415924157}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4366898095505236577
 MeshFilter:
@@ -3564,7 +3559,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 3
+  StructureDamage: 4
   DestroyTime: 15
 --- !u!64 &6876987783096847450
 MeshCollider:
@@ -3622,13 +3617,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5653247079472698950}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3571627648522888645}
-  m_RootOrder: 3
+  m_Father: {fileID: 4217530000415924157}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1137106958057367132
 MeshFilter:
@@ -3714,7 +3709,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 20
+  StructureDamage: 30
   DestroyTime: 15
 --- !u!64 &5793368438665508387
 MeshCollider:
@@ -3778,7 +3773,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3571627648522888645}
-  m_RootOrder: 18
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7197028057374650526
 MeshFilter:
@@ -3928,7 +3923,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3571627648522888645}
-  m_RootOrder: 22
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5863426665497515912
 MeshFilter:
@@ -4014,7 +4009,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 15
+  StructureDamage: 5
   DestroyTime: 2
 --- !u!64 &3105660962398996067
 MeshCollider:
@@ -4059,7 +4054,7 @@ GameObject:
   - component: {fileID: 1197972041927310846}
   - component: {fileID: 2135270105711638541}
   m_Layer: 0
-  m_Name: Cube_Cube.002
+  m_Name: Slide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4076,9 +4071,14 @@ Transform:
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1710055785247937135}
+  - {fileID: 7995807862680515611}
+  - {fileID: 459595576307705886}
+  - {fileID: 5268885847910842590}
+  - {fileID: 50533327568927948}
   m_Father: {fileID: 3571627648522888645}
-  m_RootOrder: 19
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8989856477744540338
 MeshFilter:
@@ -4161,8 +4161,8 @@ MonoBehaviour:
   IsFoundation: 0
   IsResilient: 1
   IsDamagingObject: 1
-  spinForce: 20
-  flingForce: 40
+  spinForce: 50
+  flingForce: 20
   flingTimer: 2
   StructureDamage: 5
   DestroyTime: 15
@@ -4450,13 +4450,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7053432008083676439}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3571627648522888645}
-  m_RootOrder: 14
+  m_Father: {fileID: 4217530000415924157}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &9188889909207340239
 MeshFilter:
@@ -4842,7 +4842,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 3
+  StructureDamage: 4
   DestroyTime: 15
 --- !u!64 &8737154800275471360
 MeshCollider:
@@ -4992,7 +4992,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 3
+  StructureDamage: 4
   DestroyTime: 15
 --- !u!64 &5098675124507559019
 MeshCollider:
@@ -5056,7 +5056,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3571627648522888645}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &933129488911473919
 MeshFilter:
@@ -5142,7 +5142,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 30
+  StructureDamage: 50
   DestroyTime: 15
 --- !u!64 &7786536089210731719
 MeshCollider:
@@ -5200,13 +5200,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7786555959505711543}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3571627648522888645}
-  m_RootOrder: 11
+  m_Father: {fileID: 4217530000415924157}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2722278746517312550
 MeshFilter:
@@ -5292,7 +5292,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 15
+  StructureDamage: 5
   DestroyTime: 15
 --- !u!64 &2432869237681817208
 MeshCollider:
@@ -5442,7 +5442,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 3
+  StructureDamage: 4
   DestroyTime: 15
 --- !u!64 &3373865653664382956
 MeshCollider:
@@ -5592,7 +5592,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 3
+  StructureDamage: 4
   DestroyTime: 15
 --- !u!64 &8353937982674464916
 MeshCollider:
@@ -5712,6 +5712,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7909581267008190924}
+  - component: {fileID: 6834602306714680919}
   m_Layer: 0
   m_Name: 'Level1 '
   m_TagString: Untagged
@@ -5745,6 +5746,7 @@ Transform:
   - {fileID: 1052192255820445301}
   - {fileID: 9158360276331530995}
   - {fileID: 3434050615741410395}
+  - {fileID: 2762273190880503195}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6225,7 +6227,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3571627648522888645}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7819321390940368806
 MeshFilter:
@@ -6380,7 +6382,7 @@ Transform:
   - {fileID: 3049151780807708895}
   - {fileID: 1965574136544991109}
   m_Father: {fileID: 3571627648522888645}
-  m_RootOrder: 8
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8533633196527993706
 MeshFilter:
@@ -6466,7 +6468,7 @@ MonoBehaviour:
   spinForce: 50
   flingForce: 1000
   flingTimer: 1
-  StructureDamage: 15
+  StructureDamage: 20
   DestroyTime: 15
 --- !u!64 &2039999635529810838
 MeshCollider:
@@ -6644,7 +6646,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3571627648522888645}
-  m_RootOrder: 21
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3846191782443363475
 MeshFilter:
@@ -6985,6 +6987,96 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3822247309040838107, guid: 5f7944f8d696214479707fdba0a535ea, type: 3}
+--- !u!1001 &2440715331127804528
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7909581267008190924}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 3e74ce3bbb385ae4fb1c1c4446e48c01, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e74ce3bbb385ae4fb1c1c4446e48c01, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e74ce3bbb385ae4fb1c1c4446e48c01, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e74ce3bbb385ae4fb1c1c4446e48c01, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e74ce3bbb385ae4fb1c1c4446e48c01, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0360595
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e74ce3bbb385ae4fb1c1c4446e48c01, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e74ce3bbb385ae4fb1c1c4446e48c01, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -36.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e74ce3bbb385ae4fb1c1c4446e48c01, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7010574
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e74ce3bbb385ae4fb1c1c4446e48c01, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.09229631
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e74ce3bbb385ae4fb1c1c4446e48c01, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.09229631
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e74ce3bbb385ae4fb1c1c4446e48c01, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7010574
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e74ce3bbb385ae4fb1c1c4446e48c01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e74ce3bbb385ae4fb1c1c4446e48c01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -15
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e74ce3bbb385ae4fb1c1c4446e48c01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 3e74ce3bbb385ae4fb1c1c4446e48c01, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d01dbfb3f2ab1364bbf89c9121721566, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 3e74ce3bbb385ae4fb1c1c4446e48c01, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: d01dbfb3f2ab1364bbf89c9121721566, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 3e74ce3bbb385ae4fb1c1c4446e48c01, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: d01dbfb3f2ab1364bbf89c9121721566, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 3e74ce3bbb385ae4fb1c1c4446e48c01, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: af089ba3f236b004fb2bb64119f294d8, type: 2}
+    - target: {fileID: 919132149155446097, guid: 3e74ce3bbb385ae4fb1c1c4446e48c01, type: 3}
+      propertyPath: m_Name
+      value: Federal Bureau of Prisons
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3e74ce3bbb385ae4fb1c1c4446e48c01, type: 3}
+--- !u!4 &2762273190880503195 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3e74ce3bbb385ae4fb1c1c4446e48c01, type: 3}
+  m_PrefabInstance: {fileID: 2440715331127804528}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2892027474282482608
 PrefabInstance:
   m_ObjectHideFlags: 0
