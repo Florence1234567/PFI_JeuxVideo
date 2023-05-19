@@ -8,7 +8,7 @@ public class LevelLoadComponent : MonoBehaviour
 
     private GameObject currentLevel;
     bool loading = true; 
-    private int levelCounter = 1; 
+    private int levelCounter = 0; 
 
     // Start is called before the first frame update
     void Start()
@@ -34,28 +34,34 @@ public class LevelLoadComponent : MonoBehaviour
     public IEnumerator LoadLevel() 
     {
         
-        if (currentLevel) {
-            levelCounter += 1;
-            yield return new WaitForSeconds(5f);
-            Destroy(currentLevel);
-        }
-
-        currentLevel = Instantiate(LevelsList[levelCounter]);
-
-        GameObject player = GameObject.FindWithTag("Player");
-        GameObject spawnPoint = GameObject.FindWithTag("Respawn");
-
-        if (player != null && spawnPoint != null)
-        {
-            player.transform.position = spawnPoint.transform.position;
-            player.transform.rotation = spawnPoint.transform.rotation;
-        }
-        loading = false;
-    }
-
-    IEnumerator WaitSeconds(int duration)
-    {
-        yield return new WaitForSeconds(duration);
         
+
+        // si nous ne sommes pas au dernier niveau. 
+        if (LevelsList.Length > levelCounter) 
+        {
+            // si nous sommes déjà à l'intérieur d'un niveau
+            if (currentLevel) 
+            {
+                levelCounter += 1;
+                yield return new WaitForSeconds(5f);
+                Destroy(currentLevel);
+            }
+
+            currentLevel = Instantiate(LevelsList[levelCounter]);
+            GameObject player = GameObject.FindWithTag("Player");
+            GameObject spawnPoint = GameObject.FindWithTag("Respawn");
+
+            if (player != null && spawnPoint != null)
+            {
+                player.transform.position = spawnPoint.transform.position;
+                player.transform.rotation = spawnPoint.transform.rotation;
+            }
+        }
+        else 
+        {
+            // VICTOIRE YAYAYYAY AYYAYAYYAY AYY AY YAY
+        }
+
+        loading = false;
     }
 }
